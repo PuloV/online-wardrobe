@@ -6,7 +6,7 @@ App.bindMenuLinks = function(){
 		link = $(this).attr("href");
 		switch(link){
 			case "#develop" :
-				subnav = $(this).parent().find("ul.subnav")
+				subnav = $(link).find("ul.subnav")
 				console.log(subnav)
 				subnav.removeClass("hidden");
 				$(".nav.navbar-nav > li").removeClass("active")
