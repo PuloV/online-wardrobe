@@ -58,6 +58,9 @@
 $( document ).ready(function(){
     App.showMenu();
     App.resizeMenu();
+    console.log(App.getData("clothes/men" , function (data) {
+        console.log(data)
+    }))
 
 })
 </script>
