@@ -16,12 +16,16 @@ App.bindMenuLinks = function(){
 		}
 
 		switch(link){
-			case "#develop" :
+			case "#catalog" :
 				subnav = $(link).find("ul.subnav")
 				console.log(subnav)
 				subnav.removeClass("hidden");
 				$(".nav.navbar-nav > li").removeClass("active")
 				$(link).addClass("active")
+
+				var selector = $(".container")
+				var url = "gender_clothes.html"
+				var callback = false
 				break;
 			default:
 				$(".nav.navbar-nav > li").removeClass("active")
@@ -29,6 +33,8 @@ App.bindMenuLinks = function(){
 				$(link).addClass("active")
 				break;
 		}
+
+		App.load(selector , url , callback)
 	})
 }
 
@@ -69,15 +75,36 @@ App.load = function (selector , url , callback) {
 }
 
 App.getData = function (url) {
+	var json_url = "";
 	switch(url){
 		case "clothes/men":
-
-
+			json_url = "data/men.json"
 		break;
+
+		case "clothes/women":
+			json_url = "data/women.json"
+		break;
+
+		case "clothes/dresses":
+			json_url = "data/dresses.json"
+		break;
+
+		case "clothes/shirts":
+			json_url = "data/shirts.json"
+		break;
+
+		case "clothes/jeans":
+			json_url = "data/jeans.json"
+		break;
+
+		case "clothes/tops":
+			json_url = "data/tops.json"
+		break;
+
 	}
 	var result = []
 	$.ajax({
-		url: url,
+		url: json_url,
 		dataType: "json"
 	}).done(function(data){
 		result = data
