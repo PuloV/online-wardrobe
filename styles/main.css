@@ -1,8 +1,53 @@
 ul.subnav a i {
  padding-left: 10px;
 }
+.noborder{
+	border-width: 0px !important;
+}
+.no-padding{
+	padding: 0px !important;
+}
+.mainSpace{
+	padding-top: 40vh;
+}
 .mainTile{
 	margin-top: 20px;
+}
+
+.imageBox{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.imgnopadding{
+	margin-top: 50px;
+	padding-left:0px;
+	padding-right:0px;
+}
+.imgfloatleft{
+	float:left;
+}
+
+.imgVA{
+	padding-top: 11vh;
+	text-align: center;
+}
+
+ .imgVA img {
+    max-width: 100%;
+    width: auto;
+}
+
+.infoBox{
+	padding-top: 110px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.infoBoxSpace{
+	padding-top: 75px;
+	padding-left: 75px;
 }
 .color-silver{
 	background-color: #bdc3c7;
@@ -19,4 +64,5 @@ ul.subnav a i {
 }
 .active_small {
 	background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);
+
 }

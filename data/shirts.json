@@ -8,7 +8,8 @@
 	{
     "title":"Shirt №2",
     "price":"15$",
-    "image":"data/shirt/shirt2.jpg"
+    "image":"data/shirt/shirt2.jpg",
+    "instock":"yes"
   },
 
 	{
