@@ -15,25 +15,43 @@ App.bindMenuLinks = function(){
 			return
 		}
 
-		switch(link){
-			case "#catalog" :
-				subnav = $(link).find("ul.subnav")
-				console.log(subnav)
-				subnav.removeClass("hidden");
-				$(".nav.navbar-nav > li").removeClass("active")
-				$(link).addClass("active")
+		$(".active_small").removeClass("active_small");
+		var selector = $(".container")
+		var url = "gender_clothes.html"
+		var callback = false
 
-				var selector = $(".container")
-				var url = "gender_clothes.html"
-				var callback = false
+		switch(link){
+			case "#catalog":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "gender_clothes.html"
 				break;
+
+			case "#about":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "about.html"
+				break;
+
+			case "#male":
+			case "#female":
+			case "#child":
+				selector = $(".container")
+				url = "gender_clothes.html"
+				callback = false
+				break;
+
 			default:
-				$(".nav.navbar-nav > li").removeClass("active")
+				$(".nav.navbar-nav li").removeClass("active")
 				$("ul.subnav").addClass("hidden")
 				$(link).addClass("active")
 				break;
 		}
-
+		$(".container").focus();
 		App.load(selector , url , callback)
 	})
 }
@@ -74,7 +92,8 @@ App.load = function (selector , url , callback) {
 	})
 }
 
-App.getData = function (url) {
+// get the data from the needed json
+App.getData = function (url ,callback) {
 	var json_url = "";
 	switch(url){
 		case "clothes/men":
@@ -100,14 +119,15 @@ App.getData = function (url) {
 		case "clothes/tops":
 			json_url = "data/tops.json"
 		break;
+		default:
+			alert("FATAL ERROR");
 
 	}
 	var result = []
+	console.log("start ajax")
 	$.ajax({
 		url: json_url,
 		dataType: "json"
-	}).done(function(data){
-		result = data
-	})
-	return result
+	}).done(callback)
+
 }

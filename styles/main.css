@@ -45,5 +45,8 @@ ul.subnav a i {
 }
 .max-height{
 	height:100vh;
+}
+.active_small {
+	background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);
 
 }
