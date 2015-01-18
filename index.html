@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>metro-bootstrap: Twitter Bootstrap with Metro style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="dist/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+    <style>
+
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper-container {
+        width: 100%;
+    }
+
+    #wrapper-container .container {
+        margin-left: inherit;
+    }
+
+    #wrapper.wrapper-full {
+        padding-left: 110px;
+    }
+
+
+
+    </style>
+  </head>
+  <body >
+
+
+    <div id="wrapper">
+        <!-- side bar container -->
+        <div id="sideBar" class="navbar navbar-side navbar-inverse navbar-fixed-top" role="navigation">
+        </div>
+        <!-- /side bar container -->
+        <div id="wrapper-container">
+            <div class="container">
+
+              <div class="starter-template">
+                <h1>Bootstrap starter template</h1>
+                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+              </div>
+
+            </div><!-- /.container -->
+        </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/metro-docs.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript">
+$( document ).ready(function(){
+    App.showMenu();
+    App.resizeMenu();
+
+})
+</script>
+
+  </body>
+</html>
