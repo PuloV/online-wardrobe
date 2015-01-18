@@ -1,5 +1,6 @@
 var App = function () {}
 
+//  binds the sidebar menu links
 App.bindMenuLinks = function(){
 	$(".sideBar_link").click(function (e) {
 		e.preventDefault();
@@ -30,6 +31,8 @@ App.bindMenuLinks = function(){
 		}
 	})
 }
+
+// shows the menus
 App.showMenu = function(type) {
 	$("#sideBar").load("side_bar.html");
 
@@ -41,6 +44,7 @@ App.showMenu = function(type) {
 	App.load($("#sideBar") , "side_bar.html" , bind_links)
 
 }
+
 // binds the button for resizing the sidebar menu
 App.resizeMenu = function(type) {
 
@@ -62,4 +66,21 @@ App.load = function (selector , url , callback) {
 			callback()
 		}
 	})
+}
+
+App.getData = function (url) {
+	switch(url){
+		case "clothes/men":
+
+
+		break;
+	}
+	var result = []
+	$.ajax({
+		url: url,
+		dataType: "json"
+	}).done(function(data){
+		result = data
+	})
+	return result
 }
