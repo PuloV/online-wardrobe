@@ -21,12 +21,20 @@ App.bindMenuLinks = function(){
 		var callback = false
 
 		switch(link){
-			case "#catalog" :
+			case "#catalog":
 				subnav = $(link).find("ul.subnav")
 				$(".nav.navbar-nav li").removeClass("active")
 				subnav.removeClass("hidden");
 				$(link).addClass("active")
 				url = "gender_clothes.html"
+				break;
+
+			case "#about":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "about.html"
 				break;
 
 			case "#male":
