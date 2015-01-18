@@ -4,3 +4,12 @@ ul.subnav a i {
 .mainTile{
 	margin-top: 20px;
 }
+.color-silver{
+	background-color: #bdc3c7;
+}
+.color-cloud{
+	background-color: #ecf0f1;
+}
+.max-height{
+	height:100vh;
+}
