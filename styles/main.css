@@ -17,6 +17,14 @@ ul.subnav a i {
 	margin-left: 30px;
 	margin-right: 30px;
 }
+.imgnopadding{
+	padding-left:0px;
+	padding-right:0px;
+}
+.imgfloatleft{
+	float:left;
+}
+
 .imgVA{
 	padding-top: 11vh;
 	text-align: center;

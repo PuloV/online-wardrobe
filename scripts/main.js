@@ -38,10 +38,18 @@ App.bindMenuLinks = function(){
 				break;
 
 			case "#male":
+				selector = $(".container")
+				url = "MaleClothes.html"
+				callback = false
+				break;
 			case "#female":
+			selector = $(".container")
+				url = "FemaleClothes.html"
+				callback = false
+				break;
 			case "#child":
 				selector = $(".container")
-				url = "gender_clothes.html"
+				url = "ChildClothes.html"
 				callback = false
 				break;
 
