@@ -12,6 +12,10 @@ ul.subnav a i {
 }
 .max-height{
 	height:100vh;
+	overflow-x:hidden;
+}
+.min-100-width{
+	min-width: 100px;
 }
 .active_small {
 	background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);

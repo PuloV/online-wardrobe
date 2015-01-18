@@ -37,12 +37,19 @@ App.bindMenuLinks = function(){
 				url = "about.html"
 				break;
 
+			case "#contact":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "contact.html"
+				break;
+
 			case "#male":
 			case "#female":
 			case "#child":
 				selector = $(".container")
 				url = "gender_clothes.html"
-				callback = false
 				break;
 
 			default:
