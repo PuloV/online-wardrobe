@@ -4,6 +4,16 @@ App.bindMenuLinks = function(){
 	$(".sideBar_link").click(function (e) {
 		e.preventDefault();
 		link = $(this).attr("href");
+		parent_el = $(this).parent()
+		is_active = parent_el.hasClass("active")
+
+		if(is_active){
+			parent_el.removeClass("active")
+			subnav = parent_el.find("ul.subnav")
+			subnav.addClass("hidden");
+			return
+		}
+
 		switch(link){
 			case "#develop" :
 				subnav = $(link).find("ul.subnav")
@@ -14,6 +24,7 @@ App.bindMenuLinks = function(){
 				break;
 			default:
 				$(".nav.navbar-nav > li").removeClass("active")
+				$("ul.subnav").addClass("hidden")
 				$(link).addClass("active")
 				break;
 		}
