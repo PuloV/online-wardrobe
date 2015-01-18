@@ -1,0 +1,12 @@
+[
+  {
+    "title":"Tops",
+    "image":"data/tops/tops_title.jpg",
+    "file" : "data/tops.json",
+  },
+	{
+    "title":"Dresses",
+    "image":"data/dresses/dresses_title.jpg",
+    "file" : "data/dresses.json",
+  },
+]

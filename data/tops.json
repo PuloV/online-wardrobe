@@ -1,0 +1,24 @@
+[
+	{
+    "title":"Top №1",
+     "price":"105$",
+     "image":"data/tops/top1.jpg"
+  },
+
+	{
+    "title":"Top №2",
+    "price":"75$",
+    "image":"data/tops/top2.jpg"
+  },
+
+	{
+    "title":"Top №3",
+    "price":"65$",
+    "image":"data/tops/top3.jpg"
+  },
+	{
+    "title":"Top №4",
+    "price":"45$",
+    "image":"data/tops/top4.jpg"
+  },
+]

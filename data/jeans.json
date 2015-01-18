@@ -1,0 +1,24 @@
+[
+	{
+    "title":"Jeans №1",
+     "price":"105$",
+     "image":"data/jeans/jeans1.jpg"
+  },
+
+	{
+    "title":"Jeans №2",
+    "price":"75$",
+    "image":"data/jeans/jeans2.jpg"
+  },
+
+	{
+    "title":"Jeans №3",
+    "price":"65$",
+    "image":"data/jeans/jeans3.jpg"
+  },
+	{
+    "title":"Jeans №4",
+    "price":"45$",
+    "image":"data/jeans/jeans4.jpg"
+  },
+]
