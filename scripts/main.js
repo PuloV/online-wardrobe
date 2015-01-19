@@ -37,10 +37,28 @@ App.bindMenuLinks = function(){
 				url = "about.html"
 				break;
 
+			case "#contact":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "contact.html"
+				break;
+
 			case "#male":
 				selector = $(".container")
-				url = "MaleClothes.html"
-				callback = false
+				url = "type_clothes.html"
+				callback = function () {
+					App.getData("clothes/men" , function (data) {
+						var html = ""
+						data.forEach(function(element){
+							html += App.buildTypeClothesRow(element);
+						})
+						$(".container .panel-body").html(html)
+						$(".container .breadcrumb .active").text("Male Clothes")
+						App.bindTypeClothesRowLink()
+					})
+				}
 				break;
 			case "#female":
 				selector = $(".container")
@@ -131,11 +149,50 @@ App.getData = function (url ,callback) {
 			alert("FATAL ERROR");
 
 	}
-	var result = []
-	console.log("start ajax")
+
 	$.ajax({
 		url: json_url,
 		dataType: "json"
 	}).done(callback)
 
+}
+
+App.buildTypeClothesRow = function(cloth){
+	var html = ""
+
+	html = "<div class='row type_item imgfloatleft' data-id =  "+cloth.id+ "> \
+              	<div class='col-xs-3 col-sm-5 imgnopadding'> \
+                    <div class='imgVA'> \
+                         <img src='" + cloth.image +"'> \
+                    </div> \
+             	</div> \
+	            <div class='col-xs-8 col-sm-6 infoBoxSpace'> \
+	                <div class='panel panel-default noborder '> \
+	                    <!-- Panel contents --> \
+	                     <div class='panel-heading '><h3>"+ cloth.title +"</h3></font></div> \
+	                         <div class='panel-body no-padding'> \
+	                            <span>Number of items <span class='badge'>"+ cloth.count+"</span></span> \
+	                                <div class='jumbotron color-cloud'> \
+	                                  <p>"+ cloth.desc +" </p> \
+	                                </div> \
+	                         </div> \
+	                             <!-- /Panel contents --> \
+	                </div> \
+	            </div> \
+	        </div>"
+    return html
+}
+
+App.bindTypeClothesRowLink = function(){
+	$(".type_item").click(function(e){
+		var link = $(this).data("id")
+		console.log("a")
+		var callback = function () {
+			// here call App.getData  see line  51
+		}
+		App.getData(link ,function (data) {
+			// each + print func like line 54
+		})
+		App.load($(".container") , "MaleShirts.html" , callback)
+	})
 }

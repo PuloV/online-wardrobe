@@ -1,12 +1,26 @@
 [
   {
+    "id":"clothes/jeans",
     "title":"Jeans",
     "image":"data/jeans/jeans_title.jpg",
-    "file" : "data/jeans.json"
+    "file" : "data/jeans.json",
+    "desc" : "Everyday jeans",
+    "count": 4
+  },
+  {
+    "id":"clothes/jeans",
+    "title":"Jeans",
+    "image":"data/jeans/jeans_title.jpg",
+    "file" : "data/jeans.json",
+    "desc" : "Everyday jeans",
+    "count": 4
   },
 	{
+    "id":"clothes/shirts",
     "title":"Shirts",
     "image":"data/shirts/shirts_title.jpg",
-    "file" : "data/shirts.json"
+    "file" : "data/shirts.json",
+    "desc" : "Everyday Shirts",
+    "count": 4
   }
 ]
