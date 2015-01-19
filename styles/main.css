@@ -103,3 +103,9 @@ ul.subnav a i {
 	max-height: 100px;
 	margin-left: 5px;
 }
+.labelISt{
+	position:absolute;
+	z-index:200; 
+	top:50px; 
+	left:50px;
+}

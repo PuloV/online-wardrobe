@@ -64,14 +64,33 @@ App.bindMenuLinks = function(){
 				break;
 			case "#female":
 				selector = $(".container")
-				url = "FemaleClothes.html"
-				callback = false
+				url = "type_clothes.html"
+				callback = function () {
+					App.getData("clothes/women" , function (data) {
+						var html = ""
+						data.forEach(function(element){
+							html += App.buildTypeClothesRow(element);
+						})
+						$(".container .panel-body").html(html)
+						$(".container .breadcrumb .active").text("Female Clothes")
+						App.bindTypeClothesRowLink()
+					})
+				}
 				break;
 			case "#child":
 				selector = $(".container")
-				url = "ChildClothes.html"
-				callback = false
-				break;
+				url = "type_clothes.html"
+				callback = function () {
+					App.getData("clothes/men" , function (data) {
+						var html = ""
+						data.forEach(function(element){
+							html += App.buildTypeClothesRow(element);
+						})
+						$(".container .panel-body").html(html)
+						$(".container .breadcrumb .active").text("Child Clothes")
+						App.bindTypeClothesRowLink()
+					})
+				}
 
 			default:
 				$(".nav.navbar-nav li").removeClass("active")
@@ -188,17 +207,18 @@ App.buildTypeClothesRow = function(cloth){
 App.buildClothesItemRow = function (cloth) {
 	var html = ""
 	    html += "<div class='row imgfloatleft one_item' data-img='"+cloth.image+"' data-name='"+cloth.title+"' data-price='"+cloth.price+"'>"
-        html += "      <div class='col-xs-3 col-sm-5 imgnopadding'>"
+        html += "      <div class='col-xs-3 col-sm-5 imgnopadding '>"
         html += "             <div class='imgVA'>"
+        html += "      <span class='label  label-success labelISt'>In Stock</span>" 
         html += "                 <img src='"+cloth.image+"'>"
         html += "             </div>"
 
         html += "     </div>"
-        html += "    <div class='col-xs-8 col-sm-6 infoBoxSpace'>"
+        html += "    <div class='col-xs-6 col-sm-4 infoBoxSpace'>"
         html += "        <div class='panel panel-default noborder'>"
         html += "             <div class='panel-heading '><h3>"+cloth.title+"</h3></font></div>"
         html += "                 <div class='panel-body no-padding'>"
-        html += "                    <span class='label "+cloth.inStockLabel+"'>"+cloth.inStockTitle+"</span>"
+        
         html += "                        <div class='jumbotron color-cloud'>"
         html += "                          <span>" +cloth.desc+"</span> <br />"
         html += "                          <a class='btn btn-primary btn-pulldown'>Buy for "+cloth.price+"</a>"

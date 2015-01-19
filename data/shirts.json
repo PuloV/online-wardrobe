@@ -2,24 +2,27 @@
 	{
     "title":"Shirt №1",
      "price":"5$",
-     "image":"data/shirts/shirt1.jpg"
+     "image":"data/shirts/shirt1.jpg",
+     "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 
 	{
     "title":"Shirt №2",
     "price":"15$",
     "image":"data/shirts/shirt2.jpg",
-    "instock":"yes"
+    "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 
 	{
     "title":"Shirt №3",
     "price":"6$",
-    "image":"data/shirts/shirt3.jpg"
+    "image":"data/shirts/shirt3.jpg",
+     "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 	{
     "title":"Shirt №4",
     "price":"10$",
-    "image":"data/shirts/shirt4.jpg"
+    "image":"data/shirts/shirt4.jpg",
+     "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   }
 ]
