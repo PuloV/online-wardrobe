@@ -98,3 +98,8 @@ ul.subnav a i {
 .padding-top-9 {
     padding-top: 9px;
 }
+.firm_logo{
+	max-width: 100px;
+	max-height: 100px;
+	margin-left: 5px;
+}
