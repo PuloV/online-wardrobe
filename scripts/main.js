@@ -43,7 +43,7 @@ App.bindMenuLinks = function(){
 				callback = false
 				break;
 			case "#female":
-			selector = $(".container")
+				selector = $(".container")
 				url = "FemaleClothes.html"
 				callback = false
 				break;
