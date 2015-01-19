@@ -77,11 +77,31 @@
                 <span class="product_name"> </span>
             </div>
         </li>
+        <div class="purchase alert alert-success hidden">Your order is received. We will contact you as soon as possible.</div>
+        <div class="purchase alert alert-warning hidden">...</div>
+        <div class="client_info hidden">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-1x fa-user"></i></span>
+              <input type="text" class="form-control" id="client_name" placeholder="Client Name">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-1x fa-mobile-phone"></i></span>
+              <input type="text" class="form-control" id="client_phone" placeholder="Phone Number">
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-1x fa-envelope"></i></span>
+              <input type="text" class="form-control" id="client_address" placeholder="Delivery Address">
+            </div>
+            <br />
+            <button id="purchase" type="button" class="btn btn-primary">Purchase</button>
+        </div>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order</button>
+        <button type="button" class="btn btn-default close_btn" data-dismiss="modal">Close</button>
+        <button id="order" type="button" class="btn btn-primary">Order</button>
       </div>
     </div>
   </div>
