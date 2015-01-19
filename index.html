@@ -38,6 +38,7 @@
 
 
     <div id="wrapper" class=" color-cloud max-height">
+
         <!-- side bar container -->
         <div id="sideBar" class="navbar navbar-side navbar-inverse navbar-fixed-top  min-100-width" role="navigation">
         </div>
@@ -47,9 +48,45 @@
             </div><!-- /.container -->
         </div>
     </div>
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="shoping">
+            <div class="shoping-cart">
+                <i class="fa fa-1x  fa-shopping-cart"></i> <span>Shoping Cart</span>
+            </div>
+        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group shoping-cart-list">
+          <li class="list-group-item"> Nothing in cart
+          </li>
+        </ul>
+
+        <li class="hidden list-group-item shoping-cart-list-item">
+            <div class="col-xs-4 col-sm-6 nopadding">
+                <img src="" class="product_img small_img">
+            </div>
+            <div class="col-xs-8 col-sm-6 nopadding padding-top-9">
+                <span class="product_name"> </span>
+            </div>
+        </li>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/metro-docs.js"></script>
@@ -58,9 +95,9 @@
 $( document ).ready(function(){
     App.showMenu();
     App.resizeMenu();
-    // console.log(App.getData("clothes/men" , function (data) {
-    //     console.log(data)
-    // }))
+    App.shopingCart();
+
+
 
 })
 </script>

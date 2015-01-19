@@ -66,3 +66,35 @@ ul.subnav a i {
 	background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);
 
 }
+.shoping-cart {
+    bottom: 0;
+    float: right;
+    position: absolute;
+    right: 20px;
+    color:white;
+    background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);
+    width: 100px;
+    height: 20px;
+}
+.shoping-cart:hover {
+	background-color: #222;
+	height: 50px;
+}
+.open-cart {
+	background-color: #222 !important;
+	height: 50px !important;
+}
+.shoping {
+	background: none repeat scroll 0 0 rgba(85, 85, 85, 0.5);
+    float: right;
+}
+.small_img{
+	max-width: 50px;
+	max-height: 50px;
+}
+.shoping-cart-list-item{
+	height: 65px;
+}
+.padding-top-9 {
+    padding-top: 9px;
+}

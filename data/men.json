@@ -1,18 +1,18 @@
 [
   {
     "id":"clothes/jeans",
-    "title":"Jeans",
+    "title":"Jeans (Casual)",
     "image":"data/jeans/jeans_title.jpg",
     "file" : "data/jeans.json",
-    "desc" : "Everyday jeans",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     "count": 4
   },
   {
     "id":"clothes/jeans",
-    "title":"Jeans",
+    "title":"Jeans (Everyday)",
     "image":"data/jeans/jeans_title.jpg",
     "file" : "data/jeans.json",
-    "desc" : "Everyday jeans",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     "count": 4
   },
 	{
@@ -20,7 +20,7 @@
     "title":"Shirts",
     "image":"data/shirts/shirts_title.jpg",
     "file" : "data/shirts.json",
-    "desc" : "Everyday Shirts",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     "count": 4
   }
 ]
