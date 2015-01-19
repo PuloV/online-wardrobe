@@ -263,6 +263,49 @@ App.bindItemBuy = function() {
 };
 
 App.shopingCart = function() {
+	$("#order").click(function (e) {
+		$("#order").addClass("hidden")
+		$(".client_info").removeClass("hidden")
+	})
+	$("#purchase").click(function (e) {
+		// check client_name
+		if($("#client_name").val() == ""){
+			$(".purchase.alert-warning").text("Please enter your name");
+			$(".purchase.alert-warning").removeClass("hidden")
+			$("#client_name").addClass("error");
+			return;
+		} else {
+			$("#client_name").removeClass("error");
+			$(".purchase.alert-warning").addClass("hidden")
+		}
+		// check client_name
+		if($("#client_phone").val() == ""){
+			$(".purchase.alert-warning").text("Please enter your phone number");
+			$(".purchase.alert-warning").removeClass("hidden")
+			$("#client_phone").addClass("error");
+			return;
+		} else {
+			$("#client_phone").removeClass("error");
+			$(".purchase.alert-warning").addClass("hidden")
+		}
+		// check client_name
+		if($("#client_address").val() == ""){
+			$(".purchase.alert-warning").text("Please enter your address");
+			$(".purchase.alert-warning").removeClass("hidden")
+			$("#client_address").addClass("error");
+			return;
+		} else {
+			$("#client_address").removeClass("error");
+			$(".purchase.alert-warning").addClass("hidden")
+		}
+
+		$(".purchase.alert-success").removeClass("hidden")
+
+		setTimeout(function() {
+			$(".purchase.alert-success").addClass("hidden")
+			$(".close_btn").trigger("click")
+		},3600);
+	})
 	$(".shoping-cart").click(function (e) {
 
 		if(App.shopingCartList.length > 0){

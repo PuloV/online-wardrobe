@@ -103,3 +103,7 @@ ul.subnav a i {
 	max-height: 100px;
 	margin-left: 5px;
 }
+input.error{
+	border-color: red;
+	border-radius: 3px;
+}
