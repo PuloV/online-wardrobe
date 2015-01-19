@@ -209,7 +209,7 @@ App.buildClothesItemRow = function (cloth) {
 	    html += "<div class='row imgfloatleft one_item' data-img='"+cloth.image+"' data-name='"+cloth.title+"' data-price='"+cloth.price+"'>"
         html += "      <div class='col-xs-3 col-sm-5 imgnopadding '>"
         html += "             <div class='imgVA'>"
-        html += "      <span class='label  label-success labelISt'>In Stock</span>" 
+        html += "      <span class='label  label-success lableISt'>"+cloth.available+" </span>" 
         html += "                 <img src='"+cloth.image+"'>"
         html += "             </div>"
 
