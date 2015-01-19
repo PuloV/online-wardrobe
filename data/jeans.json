@@ -2,23 +2,27 @@
 	{
     "title":"Jeans №1",
      "price":"105$",
-     "image":"data/jeans/jeans1.jpg"
+     "image":"data/jeans/jeans1.jpg",
+     "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 
 	{
     "title":"Jeans №2",
     "price":"75$",
-    "image":"data/jeans/jeans2.jpg"
+    "image":"data/jeans/jeans2.jpg",
+    "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 
 	{
     "title":"Jeans №3",
     "price":"65$",
-    "image":"data/jeans/jeans3.jpg"
+    "image":"data/jeans/jeans3.jpg",
+    "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   },
 	{
     "title":"Jeans №4",
     "price":"45$",
-    "image":"data/jeans/jeans4.jpg"
+    "image":"data/jeans/jeans4.jpg",
+    "desc": "Няма човек, който обича болката сама по себе си, търси я и я желае, само защото е болка..."
   }
 ]

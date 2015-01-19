@@ -1,16 +1,16 @@
   <div class="mainSpace">
                     <!-- Main Tiles -->
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-3 trigger_tile" data-href="male">
                         <div class="thumbnail tile tile-medium tile-wet-asphalt noborder">
                             <a href="#" class="fa-links mainSpace">
                                   <i class="fa fa-4x fa-male mainTile"></i>
                                 <h1><font size="4">Male Clothes</font> </h1>
-                                 
+
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-3 trigger_tile" data-href="female">
                         <div class="thumbnail tile tile-medium tile-magenta noborder">
                             <a href="#" class="fa-links mainSpace">
                                <i class="fa fa-4x fa-female mainTile"></i>
@@ -19,7 +19,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-3 trigger_tile" data-href="child">
                         <div class="thumbnail tile tile-medium tile-wisteria noborder">
                             <a href="#" class="fa-links mainSpace">
                                 <i class="fa fa-4x fa-child mainTile"></i>
@@ -27,4 +27,12 @@
                             </a>
                         </div>
                     </div>
- </disv>
+ </div>
+ <script type="text/javascript">
+$( document ).ready(function(){
+    $(".trigger_tile").click(function(e){
+        $(".subnav li a[href=#"+$(this).data("href")+"]").trigger("click");
+    })
+
+})
+</script>
