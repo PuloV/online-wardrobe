@@ -206,10 +206,10 @@ App.buildTypeClothesRow = function(cloth){
 
 App.buildClothesItemRow = function (cloth) {
 	var html = ""
-	    html += "<div class='row imgfloatleft one_item' data-img='"+cloth.image+"' data-name='"+cloth.title+"' data-price='"+cloth.price+"'>"
+	    html += "<div class='row imgfloatleft '>"
         html += "      <div class='col-xs-3 col-sm-5 imgnopadding '>"
         html += "             <div class='imgVA'>"
-        html += "      <span class='label  label-success labelISt'>In Stock</span>" 
+        html += "      <span class='label  label-success labelISt'>In Stock</span>"
         html += "                 <img src='"+cloth.image+"'>"
         html += "             </div>"
 
@@ -218,10 +218,10 @@ App.buildClothesItemRow = function (cloth) {
         html += "        <div class='panel panel-default noborder'>"
         html += "             <div class='panel-heading '><h3>"+cloth.title+"</h3></font></div>"
         html += "                 <div class='panel-body no-padding'>"
-        
+
         html += "                        <div class='jumbotron color-cloud'>"
         html += "                          <span>" +cloth.desc+"</span> <br />"
-        html += "                          <a class='btn btn-primary btn-pulldown'>Buy for "+cloth.price+"</a>"
+        html += "                          <a class='btn btn-primary btn-pulldown one_item ' data-img='"+cloth.image+"' data-name='"+cloth.title+"' data-price='"+cloth.price+"'>Buy for "+cloth.price+"</a>"
 
         html += "                       </div>  "
         html += "                 </div>"
@@ -348,3 +348,22 @@ App.shopingCart = function() {
         $(".shoping-cart").removeClass("open-cart");
     })
 };
+
+App.showGoogleMap = function() {
+    var map;
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(42.7101640,23.3228100) // централна автогара
+        };
+        map = new google.maps.Map(document.getElementById('main-office'),
+          mapOptions);
+        mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(42.740044,23.317858) // стоков базар
+        };
+        map = new google.maps.Map(document.getElementById('main-storage'),
+          mapOptions);
+    }
+    initialize()
+}

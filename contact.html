@@ -1,24 +1,68 @@
 <div class="jumbotron color-cloud">
-  <h1>Who are we </h1>
-  <p>
-  	<h4>Какво е Lorem Ipsum  </h4>
-  	Lorem Ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия. Lorem Ipsum е индустриален стандарт от около 1500 година, когато неизвестен печатар взема няколко печатарски букви и ги разбърква, за да напечата с тях книга с примерни шрифтове. Този начин не само е оцелял повече от 5 века, но е навлязъл и в публикуването на електронни издания като е запазен почти без промяна. Популяризиран е през 60те години на 20ти век със издаването на Letraset листи, съдържащи Lorem Ipsum пасажи, популярен е и в наши дни във софтуер за печатни издания като Aldus PageMaker, който включва различни версии на Lorem Ipsum.
-  <span class="more_info hidden">
-  	<h3>Защо го използваме</h3>
-  	Известен факт е, че читателя обръща внимание на съдържанието, което чете, а не на оформлението му. Свойството на Lorem Ipsum е, че до голяма степен има нормално разпределение на буквите и се чете по-лесно, за разлика от нормален текст на английски език като "Това е съдържание, това е съдържание". Много системи за публикуване и редактори на Уеб страници използват Lorem Ipsum като примерен текстов модел "по подразбиране", поради което при търсене на фразата "lorem ipsum" в Интернет ще бъдат открити много сайтове в процес на разработка. Някой от тези сайтове биват променяни с времето, а други по случайност или нарочно(за забавление и пр.) биват оставяни в този си незавършен вид.
-  	<h3>Откъде произлиза</h3>
-  	Противно на всеобщото вярване, Lorem Ipsum не е просто случаен текст. Неговите корени са в класическата Латинска литература от 45г.пр.Хр., което прави преди повече от 2000 години. Richard McClintock, професор по Латински от колежа Hampden-Sydney College във Вирджиния, изучавайки една от най-неясните латински думи "consectetur" в един от пасажите на Lorem Ipsum, и търсейки цитати на думата в класическата литература, открива точния източник. Lorem Ipsum е намерен в секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum"(Крайностите на Доброто и Злото) от Цицерон, написан през 45г.пр.Хр. Тази книга е трактат по теория на етиката, много популярна през Ренесанса. Първият ред на Lorem Ipsum идва от ред, намерен в секция 1.10.32.
+  <h1>Contact Us </h1>
 
-Стандартният отрязък от Lorem Ipsum, използван от 1500 г. насам, е поместен по-долу за тези, които се интересуват. Секции 1.10.32 и 1.10.33 от "de Finibus Bonorum et Malorum" на Цицерон също са поместени в оригиналния им формат, заедно с превода им на английски език, направен от H. Rackham през 1914г.
-	</span>
-  </p>
+  	<div class="row">
+	  	<div class="col-xs-8 col-sm-6">
+			<div class="contacts">
+				<b>Магазин</b> (от 07.00ч до 19.00ч)<br />
+				<b>Телефон :</b> 02 123456789<br />
+				<b>Адрес :</b> булевард „Княгиня Мария Луиза“ 100, <br />София, България<br />
+			</div>
+			<div id="main-office"  class="map"></div>
+		</div>
+		<div class="col-xs-8 col-sm-6">
+			<div class="contacts">
+				<b>Склад</b> (от 07.00ч до 19.00ч)<br />
+				<b>Телефон :</b> 02 757 044 <br />
+				<b>Адрес :</b> бул. "Илиянско шосе" (зад спирка "Стоков базар Илиянци"),<br /> София, България<br />
+			</div>
+			<div id="main-storage" class="map"></div>
+		</div>
+	</div>
+
+  	<div class="more_info hidden">
+  		<h3>Send us an email</h3>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-1x fa-envelope"></i></span>
+            <input type="text" class="form-control" id="client_name" placeholder="Your email">
+        </div>
+        <br />
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-1x fa-comment-o"></i></span>
+            <textarea type="text" class="form-control" id="client_phone" placeholder="Message"> </textarea>
+        </div>
+        <br />
+        <button id="purchase" type="button" class="btn btn-primary">Send</button>
+	</div>
+
   <p>
-  	<a id="showMoreAboutUs" class="btn btn-primary btn-lg" role="button">Learn more</a>
-  	<a id="showLessAboutUs" class="hidden" role="button">Show less</a>
+  	<br />
+  	<a id="showMoreAboutUs" class="btn btn-primary btn-lg" role="button">Email us</a>
+  	<a id="showLessAboutUs" class="hidden" role="button">Hide form</a>
   	</p>
 </div>
+<!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"> </script>
+<script>
+	function initialize()
+	{
+		var map=new google.maps.Map(document.getElementById("main-office")
+		  ,{
+			  center:new google.maps.LatLng(42.7101640,23.3228100),
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  }
+		);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script> -->
+
+
+
 <script type="text/javascript">
+
 $( document ).ready(function(){
+
 	$("#showMoreAboutUs").click(function (e) {
 		e.preventDefault();
 		$(".more_info").removeClass("hidden")
@@ -32,5 +76,6 @@ $( document ).ready(function(){
 		$("#showLessAboutUs").toggleClass("hidden")
 	})
 
-	})
+	App.showGoogleMap()
+})
 </script>

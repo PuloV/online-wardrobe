@@ -106,12 +106,19 @@ ul.subnav a i {
 
 .labelISt{
 	position:absolute;
-	z-index:200; 
-	top:50px; 
+	z-index:200;
+	top:50px;
 	left:50px;
 }
 input.error{
 	border-color: red;
 	border-radius: 3px;
 
+}
+.map{
+	width: 250px;
+	height: 250px;
+}
+.maps-container{
+	display: inline-block;
 }
