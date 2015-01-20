@@ -1,0 +1,44 @@
+[
+	{
+    "title":"Male Hat №1",
+    "price":"15$",
+    "image":"data/mhats/malehat1.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  },
+	{
+    "title":"Male Hat №2",
+    "price":"25$",
+    "image":"data/mhats/malehat2.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  },
+	{
+    "title":"Male Hat №3",
+    "price":"35$",
+    "image":"data/mhats/malehat3.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  },
+	{
+    "title":"Male Hat №4",
+    "price":"55$",
+    "image":"data/mhats/malehat4.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  },
+  {
+    "title":"Male Hat №5",
+    "price":"55$",
+    "image":"data/mhats/malehat5.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  },
+  {
+    "title":"Male Hat №6",
+    "price":"55$",
+    "image":"data/mhats/malehat6.jpg",
+    "available": "In Stock",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+  }
+]
