@@ -22,5 +22,13 @@
     "file" : "data/shirts.json",
     "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     "count": 4
+  },
+  {
+    "id":"clothes/mhats",
+    "title":"Hats",
+    "image":"data/mhats/mhats_title.jpg",
+    "file" : "data/mhats.json",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "count": 6
   }
 ]

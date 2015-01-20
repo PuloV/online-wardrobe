@@ -2,23 +2,31 @@
 	{
     "title":"Top №1",
      "price":"105$",
-     "image":"data/tops/top1.jpg"
+     "image":"data/tops/top1.jpg",
+     "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+     "available": "In Stock"
   },
 
 	{
     "title":"Top №2",
     "price":"75$",
-    "image":"data/tops/top2.jpg"
+    "image":"data/tops/top2.jpg",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "available": "In Stock"
   },
 
 	{
     "title":"Top №3",
     "price":"65$",
-    "image":"data/tops/top3.jpg"
+    "image":"data/tops/top3.jpg",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "available": "In Stock"
   },
 	{
     "title":"Top №4",
     "price":"45$",
-    "image":"data/tops/top4.jpg"
+    "image":"data/tops/top4.jpg",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "available": "In Stock"
   }
 ]
