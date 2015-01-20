@@ -39,6 +39,14 @@ App.bindMenuLinks = function(){
 				url = "about.html"
 				break;
 
+			case "#home":
+				subnav = $(link).find("ul.subnav")
+				$(".nav.navbar-nav li").removeClass("active")
+				subnav.removeClass("hidden");
+				$(link).addClass("active")
+				url = "main.html"
+				break;
+
 			case "#contact":
 				subnav = $(link).find("ul.subnav")
 				$(".nav.navbar-nav li").removeClass("active")
@@ -110,6 +118,7 @@ App.showMenu = function(type) {
 	bind_links = function () {
 		App.resizeMenu();
 		App.bindMenuLinks();
+    	$("a[href=#home]").trigger("click");
 	}
 
 	App.load($("#sideBar") , "side_bar.html" , bind_links)
