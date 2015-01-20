@@ -1,0 +1,44 @@
+[
+	{
+    "title":"Female Hat №1",
+    "price":"15$",
+    "image":"data/fhats/femalehat1.jpg",
+    "available": "In Stock",
+    "desc":""
+  },
+	{
+    "title":"Female Hat №2",
+    "price":"25$",
+    "image":"data/fhats/femalehat2.jpg",
+    "available": "In Stock",
+    "desc":""
+  },
+	{
+    "title":"Female Hat №3",
+    "price":"35$",
+    "image":"data/fhats/femalehat3.jpg",
+    "available": "In Stock",
+    "desc":""
+  },
+	{
+    "title":"Female Hat №4",
+    "price":"55$",
+    "image":"data/fhats/femalehat4.jpg",
+    "available": "In Stock",
+    "desc":""
+  },
+  {
+    "title":"Female Hat №5",
+    "price":"55$",
+    "image":"data/fhats/femalehat5.jpg",
+    "available": "In Stock",
+    "desc":""
+  },
+  {
+    "title":"Female Hat №6",
+    "price":"55$",
+    "image":"data/fhats/femalehat6.jpg",
+    "available": "In Stock",
+    "desc":""
+  }
+]
