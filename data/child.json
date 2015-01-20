@@ -24,13 +24,6 @@
     "count": 4
   },
   {
-    "id":"clothes/mhats",
-    "title":"Hats for boys",
-    "image":"data/mhats/mhats_title.jpg",
-    "file" : "data/mhats.json",
-    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    "count": 6
-  },{
     "id":"clothes/tops",
     "title":"Tops",
     "image":"data/tops/tops_title.jpg",
@@ -45,6 +38,14 @@
     "file" : "data/dresses.json",
     "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
     "count": 4
+  }, 
+  {
+    "id":"clothes/mhats",
+    "title":"Hats for boys",
+    "image":"data/mhats/mhats_title.jpg",
+    "file" : "data/mhats.json",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "count": 6
   },
   {
     "id":"clothes/fhats",
