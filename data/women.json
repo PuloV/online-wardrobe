@@ -1,12 +1,26 @@
 [
   {
+    "id":"clothes/tops",
     "title":"Tops",
     "image":"data/tops/tops_title.jpg",
-    "file" : "data/tops.json"
+    "file" : "data/tops.json",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "count": 4
   },
 	{
+    "id":"clothes/dresses",
     "title":"Dresses",
     "image":"data/dresses/dresses_title.jpg",
-    "file" : "data/dresses.json"
+    "file" : "data/dresses.json",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "count": 4
+  },
+  {
+    "id":"clothes/fhats",
+    "title":"Hats",
+    "image":"data/fhats/fhats_title.jpg",
+    "file":"data/fhats.json",
+    "desc" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "count": 6
   }
 ]

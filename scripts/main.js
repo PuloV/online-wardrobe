@@ -81,7 +81,7 @@ App.bindMenuLinks = function(){
 				selector = $(".container")
 				url = "type_clothes.html"
 				callback = function () {
-					App.getData("clothes/men" , function (data) {
+					App.getData("clothes/child" , function (data) {
 						var html = ""
 						data.forEach(function(element){
 							html += App.buildTypeClothesRow(element);
@@ -151,6 +151,10 @@ App.getData = function (url ,callback) {
 			json_url = "data/women.json"
 		break;
 
+		case "clothes/child":
+			json_url = "data/child.json"
+		break;
+
 		case "clothes/dresses":
 			json_url = "data/dresses.json"
 		break;
@@ -165,6 +169,14 @@ App.getData = function (url ,callback) {
 
 		case "clothes/tops":
 			json_url = "data/tops.json"
+		break;
+
+		case "clothes/mhats":
+			json_url = "data/mhats.json"
+		break;
+
+		case "clothes/fhats":
+			json_url = "data/fhats.json"
 		break;
 		default:
 			alert("FATAL ERROR");
@@ -209,7 +221,7 @@ App.buildClothesItemRow = function (cloth) {
 	    html += "<div class='row imgfloatleft '>"
         html += "      <div class='col-xs-3 col-sm-5 imgnopadding '>"
         html += "             <div class='imgVA'>"
-        html += "      <span class='label  label-success labelISt'>In Stock</span>"
+        html += "      <span class='label  label-success lableISt'>"+cloth.available+" </span>"
         html += "                 <img src='"+cloth.image+"'>"
         html += "             </div>"
 
@@ -234,7 +246,7 @@ App.buildClothesItemRow = function (cloth) {
 App.bindTypeClothesRowLink = function(){
 	$(".type_item").click(function(e){
 		var link = $(this).data("id")
-		console.log("a")
+
 		callback = function () {
 			App.getData(link , function (data) {
 				var html = ""
@@ -246,6 +258,16 @@ App.bindTypeClothesRowLink = function(){
 					case "clothes/dresses":
 						secondBC = "Female Clothes"
 						thirdBC = "Dresses"
+					break;
+
+					case "clothes/mhats":
+						secondBC = "Male Clothes"
+						thirdBC = "Hats"
+					break;
+
+					case "clothes/fhats":
+						secondBC = "Female Clothes"
+						thirdBC = "Hats"
 					break;
 
 					case "clothes/shirts":
